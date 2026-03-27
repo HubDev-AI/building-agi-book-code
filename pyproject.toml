@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agi-mvp"
+version = "0.1.0"
+description = "AGI MVP companion code for 'Building AGI: A Hands-On Guide'"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0",
+    "qdrant-client>=1.7",
+    "z3-solver>=4.12",
+    "sentence-transformers>=2.2",
+    "aiohttp>=3.9",
+    "pydantic>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
